@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #06080d;
+    --bg-surface: #0c1017;
+    --bg-surface-elevated: #121824;
+    --bg-surface-hover: #182232;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-medium: rgba(255, 255, 255, 0.14);
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #06080d;
+    color: #e2e8f0;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Sophisticated Dark utility layer */
+.bg-dark-base {
+  background-color: #06080d;
+}
+
+.bg-dark-surface {
+  background-color: #0c1017;
+}
+
+.bg-dark-elevated {
+  background-color: #121824;
+}
+
+.bg-dark-card {
+  background-color: rgba(12, 16, 23, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+.border-dark-subtle {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.border-dark-medium {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Custom animations & map tweaks */
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.4); opacity: 0.2; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2.4s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+@keyframes radar-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar {
+  animation: radar-spin 5s linear infinite;
+}
+
+/* Leaflet dark theme styling */
+.leaflet-container {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  background-color: #06080d !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #0c1017 !important;
+  color: #f1f5f9 !important;
+  border-radius: 1rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8) !important;
+  padding: 4px !important;
+}
+
+.leaflet-popup-tip {
+  background: #0c1017 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Sophisticated Dark scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #06080d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+

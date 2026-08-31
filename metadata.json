@@ -1,0 +1,6 @@
+{
+  "name": "LandSafe AI - Landslide Warning System",
+  "description": "AI-powered landslide early warning, real-time risk mapping, explainable hazard predictions, community reporting, and authority command center.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
